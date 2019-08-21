@@ -1,6 +1,6 @@
 extends Camera2D
 
-var devil
+var target
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -12,4 +12,4 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if devil!=null: self.position = devil.position
+	if target!=null: self.position = target.position

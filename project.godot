@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="0819-platformer"
-run/main_scene="res://red_devil_test/red_devil_test_world.tscn"
+config/name="cmyk-wizard"
+run/main_scene="res://cmy/world.tscn"
 config/icon="res://icon.png"
 
 [rendering]

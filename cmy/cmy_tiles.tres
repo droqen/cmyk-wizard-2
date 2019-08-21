@@ -1,6 +1,8 @@
 [gd_resource type="TileSet" load_steps=2 format=2]
 
-[ext_resource path="res://red_devil_test/red_devil.png" type="Texture" id=1]
+[ext_resource path="res://cmy/wizard.png" type="Texture" id=1]
+
+
 
 [resource]
 0/name = "red_devil.png 0"

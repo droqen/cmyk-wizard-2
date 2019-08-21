@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/red_devil.png-9cde26e4e84233cb23d3ffb15810931e.stex"
+path="res://.import/wizard.png-6aba285a9092fbde05eb7365a7dbe4ed.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://red_devil_test/red_devil.png"
-dest_files=[ "res://.import/red_devil.png-9cde26e4e84233cb23d3ffb15810931e.stex" ]
+source_file="res://cmy/wizard.png"
+dest_files=[ "res://.import/wizard.png-6aba285a9092fbde05eb7365a7dbe4ed.stex" ]
 
 [params]
 
