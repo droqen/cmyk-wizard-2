@@ -7,7 +7,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	var f = File.new()
-	f.open("res://red_devil_test/0_0.json", File.READ)
+	f.open("res://red_devil_test/1_1.json", File.READ)
 	var json_str = f.get_as_text()
 	var game_data = parse_json(json_str)
 	var tile_data = game_data.layers[0].data
@@ -16,7 +16,10 @@ func _ready():
 	var x = 0
 	var y = 0
 	var solid_tiles = [11]
-	var spawn_tiles = {2:load("res://red_devil_test/red_devil_player.tscn")}
+	var spawn_tiles = {
+		2:load("res://red_devil_test/red_devil_player.tscn"),
+		3:load("res://red_devil_test/coin.tscn"),
+	}
 	
 	$vis_tilemap.clear()
 	$collisions_tilemap.clear()
