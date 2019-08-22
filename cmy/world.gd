@@ -17,8 +17,8 @@ func _ready():
 	var y = 0
 	var solid_tiles = [11]
 	var spawn_tiles = {
-		2:load("res://cmy/wizard_player.tscn"),
-		3:load("res://cmy/coin.tscn"),
+		2:[$playerParent,load("res://cmy/wizard_player.tscn")],
+		3:[$coinParent,load("res://cmy/coin.tscn")],
 	}
 	
 	$vis_tilemap.clear()
@@ -29,8 +29,8 @@ func _ready():
 		if spawn_tiles.has(tile):
 			print('spawn ',tile)
 			# no tilemap. only spawn.
-			var spawn = spawn_tiles[tile].instance()
-			get_tree().get_root().call_deferred("add_child",spawn)
+			var spawn = spawn_tiles[tile][1].instance()
+			spawn_tiles[tile][0].call_deferred("add_child",spawn)
 			spawn.position = (  $vis_tilemap.map_to_world(Vector2(x,y)) + $vis_tilemap.map_to_world(Vector2(x+1,y+1))  ) / 2
 			tile = 1 # blank black tile.
 		
