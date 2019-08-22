@@ -3,10 +3,8 @@
 [ext_resource path="res://cmy/coin.gd" type="Script" id=1]
 [ext_resource path="res://cmy/wizard.png" type="Texture" id=2]
 
-
-
 [sub_resource type="CircleShape2D" id=1]
-radius = 3.07453
+radius = 4.93622
 
 [node name="coin" type="Area2D"]
 script = ExtResource( 1 )
