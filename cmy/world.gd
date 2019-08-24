@@ -15,7 +15,7 @@ func _ready():
 	var map_h = game_data.layers[0].height
 	var x = 0
 	var y = 0
-	var solid_tiles = [11]
+	var solid_tiles = [11,12]
 	var spawn_tiles = {
 		2:[$playerParent,load("res://cmy/wizard_player.tscn")],
 		3:[$coinParent,load("res://cmy/coin.tscn")],
